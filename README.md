@@ -5,6 +5,7 @@ Current tracked configurations include:
   Waybar 
   Hyprland
   Firefox
+  Neovim(Currently very minimal)
 
 Other random goodies include:
   A guide for commands in the Arch ISO to get the CachyOS kernel and repositories during the ISO.
