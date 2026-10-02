@@ -9,7 +9,7 @@ return {
       dashboard = {
         enabled = true,
         preset = {
-          header = require("assets.logo"),
+          header = require("assets.art"),
         },
       },
       explorer = { enabled = false },
