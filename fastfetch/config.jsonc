@@ -1,0 +1,145 @@
+{
+  "$schema": "https://raw.githubusercontent.com/fastfetch-cli/fastfetch/refs/heads/dev/doc/json_schema.json",
+  "display": {
+    "hideCursor": true,
+    "brightColor": true,
+    "temp": {
+      "unit": "D",
+      "color": {
+        "green": "1",
+        "yellow": "45",
+        "red": "65"
+      },
+      "spaceBeforeUnit": "always"
+    },
+    "size": {
+      "binaryPrefix": "iec",
+      "spaceBeforeUnit": "always"
+    },
+    "percent": {
+      "type": 3,
+      "spaceBeforeUnit": "always",
+      "color": {
+        "green": "1",
+        "yellow": "75",
+        "red": "100"
+      },
+      "ndigits": 2
+    },
+    "bar": {
+      "color": {
+        "elapsed": "#89b4fa",
+        "total": "#45475a",
+        "border": "#6c7086"
+      }
+    },
+    "fraction": {
+      "ndigits": 2,
+      "trailingZeros": null
+    },
+    "freq": {
+      "ndigits": 2,
+      "spaceBeforeUnit": "always"
+    },
+    "duration": {
+      "spaceBeforeUnit": "always",
+      "abbreviation": true
+    },
+    "pipe": false,
+    "key": {
+      "width": 0
+    },
+    "color": "#b4befe"
+  },
+  "logo": {
+    "color": {
+      "1": "#f5c2e7",
+      "2": "#cba6f7",
+      "3": "#b4befe"
+    },
+    "cache": true,
+    "type": "file",
+    "source": "/home/elliot/.config/fastfetch/assets/cat.txt"
+  },
+  "modules": [
+    {
+      "type": "title",
+      "color": {
+        "user": "#b4befe",
+        "host": "#b4befe",
+        "at": "#cba6f7"
+      },
+      "format": "                   {user-name-colored}{at-symbol-colored}{host-name-colored}",
+      "key": " "
+    },
+    {
+      "type": "custom",
+      "format": "{##f5c2e7}┌────────────────────────────────────────────────────┐"
+    },
+    {
+      "type": "custom",
+      "format": "{##b4befe}                 Machine Information     "
+    },
+    "break",
+    {
+      "type": "os",
+      "outputColor": "#cdd6f4",
+      "format": "{pretty-name}",
+      "key": "   OS"
+    },
+    {
+      "type": "initsystem",
+      "key": "   Init",
+      "outputColor": "#cdd6f4",
+      "format": "{name}"
+    },
+    "break",
+    {
+      "type": "uptime",
+      "key": "   Uptime",
+      "outputColor": "#cdd6f4",
+      "format": "{formatted}"
+    },
+    {
+      "type": "custom",
+      "format": "{##b4befe}                Enviroment Information"
+    },
+    "break",
+    {
+      "type": "shell",
+      "outputColor": "#cdd6f4",
+      "key": "   Shell",
+      "format": "{pretty-name} {version}"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "{##b4befe}                Hardware Information"
+    },
+    "break",
+    {
+      "type": "cpu",
+      "key": "   CPU",
+      "outputColor": "#cdd6f4",
+      "temp": true,
+      "format": "{name}"
+    },
+    {
+      "type": "memory",
+      "key": "   Memory",
+      "outputColor": "#cdd6f4",
+      "format": "{used}/{total} {percentage-bar}"
+    },
+    {
+      "type": "disk",
+      "key": "   Disk",
+      "outputColor": "#cdd6f4",
+      "format": "{size-used}/{size-total} used. {size-free} free."
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "{##f5c2e7}└────────────────────────────────────────────────────┘"
+    }
+  ]
+}
