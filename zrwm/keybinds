@@ -1,0 +1,20 @@
+#!/usr/bin/sh
+
+#Clear binds to ensure that it resets properly
+  zrwm-msg clear-binds
+
+#Window Actions
+  zrwm-msg bind super c killwindow
+
+#Applications 
+  zrwm-msg bind super t spawn kitty
+  zrwm-msg bind super space spawn rofi -show run
+  zrwm-msg bind super w spawn firefox
+
+# Media keys
+  # volume keys
+    zrwm-msg bind none XF86AudioRaiseVolume spawn wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+    zrwm-msg bind none XF86AudioLowerVolume spawn wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+  # mute keys
+    zrwm-msg bind none XF86AudioMute spawn wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+    zrwm-msg bind none XF86AudioMicMute spawn wpctl set-mute @DEFAULT_SOURCE@ toggle
