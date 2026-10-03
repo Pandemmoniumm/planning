@@ -1,0 +1,13 @@
+#!/usr/bin/sh
+export XDG_CURRENT_DESKTOP=river
+export XDG_MENU_PREFIX=river
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_MENU_PREFIX
+dbus-update-activation-environment --all
+systemctl --user stop xdg-desktop-portal-kde xdg-desktop-portal-gnome xdg-desktop-portal-gtk xdg-desktop-portal-wlr 2>/dev/null
+systemctl --user start xdg-desktop-portal
+
+. "/home/elliot/.config/zrwm/keybinds"
+. "/home/elliot/.config/zrwm/input"
+. "/home/elliot/.config/zrwm/winrules"
+
+

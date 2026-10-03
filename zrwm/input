@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+
+#Tap-to-click
+zrwm-msg input-rule -tap-to-click 1

@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+
+zrwm-msg setcursor Adwaita 18
+zrwm-msg setlayout 0
+zrwm-msg borderpx 2
